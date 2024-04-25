@@ -65,8 +65,10 @@ export function CardGame() {
         pokemon.counter = 0;
       })
     }
+    else {
+      increment();
+    }
     setPokemonList(copyArr);
-    increment();
     setIsClick(!isClick)
   }
 
