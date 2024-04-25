@@ -101,11 +101,13 @@ export function CardGame() {
 
 
     return (
+      <>
+      < Points counter={counter} maxCounter={maxCount} />
         <div className="cardsContainer">
             {pokemonList.map((pokemon) => (
                 <Card key={pokemon.name} name={pokemon.name} url={pokemon.url} onClick={handleClick}/>
             ))}
-            < Points counter={counter} maxCounter={maxCount} />
         </div>
+      </>
         )
 }
