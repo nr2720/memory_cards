@@ -71,8 +71,35 @@
   top: 50px
 }
 
+@media only screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+  .cardsContainer {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+    gap: 40px;
 
-@media only screen and (max-width: 600px) and (min-width: 380px)  {
+  }
+
+  .box {
+    transform: scale(0.9);
+  }
+
+  .points {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
   .cardsContainer {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
@@ -85,7 +112,6 @@
     background-color: white;
     border-radius: 12px;
     color: black;
-
   }
 
 }
